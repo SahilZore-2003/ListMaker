@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>List Maker</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
 
 </head>
 
@@ -28,6 +29,7 @@
                         <option value="not selected">unit</option>
                         <option value="KG">KG</option>
                         <option value="GM">GM</option>
+                        <option value="RS">RS</option>
                     </select>
                 </div>
                
@@ -42,6 +44,7 @@
                 
             </ol>
             <button onclick="cut()" class="btn btn-block btn-danger" id="delete">Delete List</button>
+            <button onclick="download()" class="btn btn-block btn-success" id="download">Download</button>
         </div>
     </div>
     <!-- Optional JavaScript -->

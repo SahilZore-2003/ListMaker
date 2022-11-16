@@ -26,10 +26,23 @@ document.getElementById('amount').value = "";
 let lihas = document.getElementsByTagName('li').length;
  if(lihas>=1){
     document.getElementById('delete').style.display = "block";
+    document.getElementById('download').style.display = "block";
+
+    
+
  }
+
    
 }
 
 let cut =()=>{
     window.location.reload();
 }
+
+function download(){
+    let downloadlist = document.getElementById('list');
+    html2pdf().from(downloadlist).save();
+    
+}
+
+console.log(window);

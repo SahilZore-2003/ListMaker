@@ -47,6 +47,10 @@ i:hover{
     display: none;
 }
 
+#download{
+    display: none;
+}
+
 @media (max-width:600px){
     .flex{
         display: flex;
